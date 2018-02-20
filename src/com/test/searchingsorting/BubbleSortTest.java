@@ -1,11 +1,11 @@
 package com.test.searchingsorting;
 
-/*
+/**
  * Bubble Sort.
  * 
  * <p> Works by repeatedly swapping the adjacent elements if they are in wrong order.
  * 
- * Time Complexity: O(n*n)
+ * Time Complexity: O(n^2) in average case
  * 
  * Space Complexity: O(1)
  */

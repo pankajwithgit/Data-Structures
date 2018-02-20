@@ -1,11 +1,11 @@
 package com.test.searchingsorting;
 
-/*
+/**
  * Selection Sort. 
  * <p> Sorts an array by repeatedly finding the minimum element from unsorted part
  * and placing it at the beginning.
  * 
- * Time complexity: O(N*N)
+ * Time complexity: O(n^2) in average case
  * 
  * Space complexity: O(1)
  * 
