@@ -1,6 +1,6 @@
 package com.test.searchingsorting;
 
-/*
+/**
  * Insertion sort.
  * 
  * <p> Works the way we sort playing cards in our hands. it builds the final sorted array one item
