@@ -20,13 +20,12 @@ import java.util.Queue;
  * <li>Step 6: When queue becomes Empty, then produce final spanning tree by removing unused edges
  * from the graph</li>
  * </ul>
- *
  */
-public class BFS {
+public class BFS2 {
 
   private Queue<GraphNode> queue;
 
-  public BFS() {
+  public BFS2() {
     queue = new LinkedList<>();
   }
 
