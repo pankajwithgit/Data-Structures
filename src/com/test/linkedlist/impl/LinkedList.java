@@ -6,6 +6,10 @@ package com.test.linkedlist.impl;
 public class LinkedList<T> {
 
   private Node<T> head;
+  
+  public Node<T> getHead() {
+    return head;
+  }
 
   // Inserts a new element on the top of the list.
   public void push(T element) {
