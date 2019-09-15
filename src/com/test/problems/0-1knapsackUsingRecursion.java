@@ -7,7 +7,8 @@ This problem is called 0-1 becuase you either use an item or don't use it at all
 
 This is recursuve way of solving 0-1 Knapsack problem.
 
-Complexity: o(2 power n)
+Complexity: O(2 power n) because each element has 2 conditions that either it will be used or not. So, if we have 3 items, 
+it will be 2 power 3 = 8, Hence O(2 Power 3) 
 */
 class Main {
   public static void main(String[] args) {
