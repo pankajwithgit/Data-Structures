@@ -6,6 +6,8 @@ weights is less than and equal to the max.
 This problem is called 0-1 becuase you either use an item or don't use it at all. No partial item can be used.
 
 This is recursuve way of solving 0-1 Knapsack problem.
+
+Complexity: o(2 power n)
 */
 class Main {
   public static void main(String[] args) {
