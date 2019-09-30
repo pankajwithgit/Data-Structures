@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 /*
 There are k sorted arrays having n length each (assuming). This problem can be solved in multiple ways. 
 
-First approach: Move all the array elements in a single but array and then perform sorting with any O(nlogn) algorithm. 
+First approach: Move all the array elements in a single big array and then perform sorting with any O(nlogn) algorithm. 
 Time complexity in this case would be O(nk*log(nk)). Why?. It will take o(nk) time to move elements to single big array and then O(nk*log(nk)) 
 for sorting. This approach donesn't take advantage of arrays being sorted already.
 
