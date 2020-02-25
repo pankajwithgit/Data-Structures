@@ -6,7 +6,7 @@ There are k sorted arrays having n length each (assuming). This problem can be s
 
 First approach: Move all the array elements in a single big array and then perform sorting with any O(nlogn) algorithm. 
 Time complexity in this case would be O(nk*log(nk)). Why?. It will take o(nk) time to move elements to single big array and then O(nk*log(nk)) 
-for sorting. This approach donesn't take advantage of arrays being sorted already.
+for sorting. This approach doesn't take advantage of arrays being sorted already.
 
 Second approach: Take one element from each array, compare and then move smallest element to resultant array. Keep moving running 
 index on each array to campare and to be eventually moved to resultant array. This approach takes O(nk*k). Why?. We will touch total nk 
