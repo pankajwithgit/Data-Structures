@@ -1,3 +1,6 @@
+// Check whether the subarray exists or not in the given array whose sum is equal to given value. [Facebook Onsite]
+// Ex = [10, 1, 3, 5, 2, 15, 18]     sum = 22  
+// Ans = True   [5, 2, 15]
 class Main {
   public static void main(String[] args) {
     int[] nums = {10,1,3,5,2,15,18};
