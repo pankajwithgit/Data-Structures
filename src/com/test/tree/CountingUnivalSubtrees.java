@@ -1,5 +1,5 @@
 // It will be a DFS solution. More details: https://leetcode.com/articles/count-univalue-subtrees/
-// Got it from Dailycodingproblem.com 
+// Got it from Dailycodingproblem.com. It's a Google question.
 class Main {
   int count = 0;
 
