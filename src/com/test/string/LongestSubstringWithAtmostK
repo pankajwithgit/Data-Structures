@@ -1,0 +1,34 @@
+/*
+This problem was asked by Amazon.
+Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters.
+For example, given s = "abcba" and k = 2, the longest substring with k distinct characters is "bcb".
+From dailycodingproblem.com
+*/
+class Main {
+  public static void main(String[] args) {
+    String res = lengthOfLongestSubstringTwoDistinct("abcbdbdbbdcdabd", 3);
+    System.out.println(res);
+  }
+
+  public static String lengthOfLongestSubstringWithKDistinct(String s, int k) {
+   int[] count = new int[256];
+   int low = 0;
+   int high = 0;
+   int i = 0, numDistinct = 0;
+   for (int j = 0; j < s.length(); j++) {
+      if (count[s.charAt(j)] == 0) numDistinct++; // because this char is encountered for the first time.
+      count[s.charAt(j)]++;
+      while (numDistinct > k) { // if more than K distinct, remove elements from left side until condition is satisfied again.
+         count[s.charAt(i)]--;
+         if (count[s.charAt(i)] == 0) numDistinct--;
+         i++;
+      }
+      // Update lower and upper bounds if bigger length identified. 
+      if(high - low < j - i) {
+        high = j;
+        low = i;
+      }
+   }
+   return s.substring(low, high + 1);
+  }
+}
