@@ -53,7 +53,7 @@ class Trie {
     for(int index = 0; index < node.arr.length; index++) {
       if(node.arr[index] != null) {
         char c = (char)(index + 'a');
-        getFullWord(node.arr[index], prefix + c, results);
+        getAllWords(node.arr[index], prefix + c, results);
       }
     }
   }
